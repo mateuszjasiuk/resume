@@ -1,0 +1,40 @@
+# Add more meaningful types :)
+type Query {
+  me: Me!
+}
+
+type Me {
+  name: String!
+  lastname: String!
+  tagline: String!
+  contact: Contact!
+  summary: String!
+  skills: [String!]
+  languages: [String!]
+  history: [History!]
+  academicBackground: [AcademicBackground]!
+}
+
+type Contact {
+  phone: String!
+  email: String!
+  linkedIn: String!
+  github: String!
+}
+
+type History {
+  position: String!
+  company: String!
+  from: String!
+  to: String!
+  achievements: [String!]
+}
+
+type AcademicBackground {
+  university: String!
+  from: String!
+  to: String!
+  major: String!
+  degree: String!
+  description: String!
+}
